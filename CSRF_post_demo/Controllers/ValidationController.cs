@@ -8,10 +8,10 @@ using System.Web.Mvc;
 
 namespace CSRF_post_demo.Controllers
 {
-    public class VulnerableController : Controller
+    public class ValidationController : Controller
     {
         RepositoryUser Repo;
-        public VulnerableController()
+        public ValidationController()
         {
             Repo = new RepositoryUser();
         }
