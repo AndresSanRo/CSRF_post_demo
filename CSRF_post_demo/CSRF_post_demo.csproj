@@ -164,6 +164,7 @@
     </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RepositoryUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
