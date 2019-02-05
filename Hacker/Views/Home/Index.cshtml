@@ -5,5 +5,11 @@
 
 <h2>Index</h2>
 
-@Html.ActionLink("Attack to vulnerable", "HackerVulnerableCSRF", "Home")
-@Html.ActionLink("Attack to vulnerable", "HackerNotVulnerableCSRF", "Home")
+<ul class="list-group">
+    <li class="list-group-item">
+        @Html.ActionLink("Attack to vulnerable controller", "HackerVulnerableCSRF", "Home")
+    </li>
+    <li class="list-group-item">
+        @Html.ActionLink("Attack to not vulnerable controller", "HackerNotVulnerableCSRF", "Home")
+    </li>
+</ul>
