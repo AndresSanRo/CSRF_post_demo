@@ -13,5 +13,16 @@ namespace CSRF_post_demo.Controllers
         {
             return View();
         }
+        // GET: Buy
+        public ActionResult Buy()
+        {
+            return View();
+        }
+        // POST: Buy
+        [HttpPost]
+        public ActionResult Buy(string product, string address)
+        {
+            return View();
+        }
     }
 }

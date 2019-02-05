@@ -4,3 +4,11 @@
 }
 
 <h1>Application vulnerable to CSRF attacks.</h1>
+@{ 
+    if (Session["USER"] != null)
+    {
+        <h1>
+            @Html.ActionLink("Buy something", "Buy", "Principal")
+        </h1>        
+    }
+}
