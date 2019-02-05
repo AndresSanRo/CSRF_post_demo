@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "HackerNotVulnerableCSRF";
+}
+
+<h2>HackerNotVulnerableCSRF</h2>
+
+<form action="http://localhost:57336/Protected/Buy" method="post">
+    <input type="hidden" name="product" value="10 Iphones X 10.000" />
+    <input type="hidden" name="address" value="The hackers house" />
+    <button class="btn btn-success" type="submit">Press this button for fun!!!</button>
+</form>

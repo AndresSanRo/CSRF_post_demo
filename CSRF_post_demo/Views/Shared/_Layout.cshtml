@@ -20,10 +20,10 @@
                     @if (Session["USER"] != null)
                     {
                         <li class="nav-item active">
-                            @Html.ActionLink("vulnerable", "Buy", "CSRF", null, new { @class = "nav-link" });
+                            @Html.ActionLink("vulnerable", "Buy", "CSRF", null, new { @class = "nav-link" })
                         </li>
                         <li class="nav-item active">
-                            @Html.ActionLink("not vulnerable", "Buy", "Protected", null, new { @class = "nav-link" });
+                            @Html.ActionLink("not vulnerable", "Buy", "Protected", null, new { @class = "nav-link" })
                         </li>
                     }
                 </ul>

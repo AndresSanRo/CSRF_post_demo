@@ -29,7 +29,7 @@ namespace CSRF_post_demo.Controllers
         public ActionResult Buy(string product, string address)
         {
             TempData["SALE"] = "Product bought: " + product + "€. Sent to address: " + address + ".";
-            return RedirectToAction("SaleReport", "Principal");
+            return RedirectToAction("SaleReport", "CSRF");
         }        
     }
 }
