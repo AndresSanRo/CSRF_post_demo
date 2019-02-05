@@ -9,7 +9,7 @@ namespace CSRF_post_demo.Contexts
 {
     public class CsrfContext : DbContext
     {
-        public CsrfContext() : base("name=tjConnStr") { }
+        public CsrfContext() : base("name=homeConnStr") { }
         public DbSet<User> Users { get; set; }
     }
 }
