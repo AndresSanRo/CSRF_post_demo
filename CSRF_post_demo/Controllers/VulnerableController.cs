@@ -35,5 +35,9 @@ namespace CSRF_post_demo.Controllers
                         
             return RedirectToAction("Index", "Principal");
         }
+        public ActionResult Hacker()
+        {
+            return View();
+        }
     }
 }
