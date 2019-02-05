@@ -7,6 +7,7 @@ using System.Web;
 
 namespace CSRF_post_demo.Models
 {
+    //This class maps the users of the application
     [Table("CSRFUSER")]
     public class User
     {

@@ -9,7 +9,9 @@ namespace CSRF_post_demo.Contexts
 {
     public class CsrfContext : DbContext
     {
+        //Context of the database
         public CsrfContext() : base("name=homeConnStr") { }
+        //DbSet to retrieve users
         public DbSet<User> Users { get; set; }
     }
 }

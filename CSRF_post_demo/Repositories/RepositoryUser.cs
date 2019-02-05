@@ -7,6 +7,7 @@ using System.Web;
 
 namespace CSRF_post_demo.Repositories
 {    
+    //This class provides the functionallity for handleling users to the controllers.
     public class RepositoryUser
     {
         CsrfContext Context;
@@ -14,9 +15,15 @@ namespace CSRF_post_demo.Repositories
         {
             Context = new CsrfContext();
         }
+        /// <summary>
+        /// Searchs for a user in the DDBB by the parameters given.
+        /// </summary>
+        /// <param name="user">string. Users´s name.</param>
+        /// <param name="password">string. User´s password</param>
+        /// <returns>An user object or null.</returns>
         public User ExistsUser(string user, string password )
         {
-            var existingUser = (from data in Context.Users
+            User existingUser = (from data in Context.Users
                           where data.Name.Equals(user)
                           && data.Password.Equals(password)
                           select data).FirstOrDefault();

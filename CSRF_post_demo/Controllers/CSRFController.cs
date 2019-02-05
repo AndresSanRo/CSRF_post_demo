@@ -12,13 +12,7 @@ namespace CSRF_post_demo.Controllers
         public ActionResult Index()
         {
             return View();
-        }
-        // GET: SaleReport
-        public ActionResult SaleReport()
-        {
-            ViewBag.SaleReport = TempData["SALE"].ToString();
-            return View();
-        }
+        }        
         // GET: Buy
         public ActionResult Buy()
         {
@@ -26,10 +20,17 @@ namespace CSRF_post_demo.Controllers
         }
         // POST: Buy
         [HttpPost]
+        //HERE SHOULD BE THE DIRECTIVE "[ValidateAntiForgeryToken]" TO PREVENT THE ATTACK
         public ActionResult Buy(string product, string address)
         {
             TempData["SALE"] = "Product bought: " + product + "€. Sent to address: " + address + ".";
             return RedirectToAction("SaleReport", "CSRF");
-        }        
+        }
+        // GET: SaleReport
+        public ActionResult SaleReport()
+        {
+            ViewBag.SaleReport = TempData["SALE"].ToString();
+            return View();
+        }
     }
 }
