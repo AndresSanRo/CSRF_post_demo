@@ -151,13 +151,15 @@
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Vulnerable\Login.cshtml" />
+    <Content Include="Views\Validation\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contexts\CsrfContext.cs" />
-    <Compile Include="Controllers\PrincipalController.cs" />
-    <Compile Include="Controllers\VulnerableController.cs" />
+    <Compile Include="Controllers\CSRFController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProtectedController.cs" />
+    <Compile Include="Controllers\ValidationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,8 +174,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="Views\Principal\Index.cshtml" />
-    <Content Include="Views\Principal\Buy.cshtml" />
+    <Content Include="Views\CSRF\Buy.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -183,7 +184,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Principal\SaleReport.cshtml" />
+    <Content Include="Views\CSRF\SaleReport.cshtml" />
+    <Content Include="Views\Protected\SaleReport.cshtml" />
+    <Content Include="Views\Protected\Buy.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

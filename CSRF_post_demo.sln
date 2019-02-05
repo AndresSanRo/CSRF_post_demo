@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSRF_vulnerable", "CSRF_post_demo\CSRF_vulnerable.csproj", "{B823423D-9C87-412A-A341-C342357EE283}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSRF_demo_post", "CSRF_post_demo\CSRF_demo_post.csproj", "{B823423D-9C87-412A-A341-C342357EE283}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hacker", "Hacker\Hacker.csproj", "{F3427AE4-134F-4F34-B3B4-F2E00FFC28CF}"
 EndProject

@@ -33,11 +33,7 @@ namespace CSRF_post_demo.Controllers
             if (currentUser != null)            
                 Session["USER"] = currentUser.Name;
                         
-            return RedirectToAction("Index", "Principal");
-        }
-        public ActionResult Hacker()
-        {
-            return View();
-        }
+            return RedirectToAction("Index", "Home");
+        }       
     }
 }

@@ -17,12 +17,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">vulnerable<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">application</a>
-                    </li>
+                    @if (Session["USER"] != null)
+                    {
+                        <li class="nav-item active">
+                            @Html.ActionLink("vulnerable", "Buy", "CSRF", null, new { @class = "nav-link" });
+                        </li>
+                        <li class="nav-item active">
+                            @Html.ActionLink("not vulnerable", "Buy", "Protected", null, new { @class = "nav-link" });
+                        </li>
+                    }
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
                     @if (Session["USER"] != null)
@@ -31,7 +34,7 @@
                     }
                     else
                     {
-                        @Html.ActionLink("Login", "Login", "Vulnerable", null, new { @class = "btn bg-light" });
+                        @Html.ActionLink("Login", "Login", "Validation", null, new { @class = "btn bg-light" });
                     }
                 </form>
             </div>

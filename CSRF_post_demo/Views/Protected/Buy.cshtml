@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Buy";
+}
+
+<h2>Buy</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <label>
+            Product:
+            <select class="form-control" name="product">
+                <option value="Iphone X 1000">Iphone X</option>
+                <option value="Tesla model 3 10000">Tesla model 3</option>
+                <option value="Diamond collar 1500">Diamond collar</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Address:
+            <input class="form-control" type="text" name="address" value="" placeholder="Your address..." />
+        </label>
+    </div>
+    <div>
+        <button class="btn btn-warning" type="submit">Buy product</button>
+    </div>
+}
