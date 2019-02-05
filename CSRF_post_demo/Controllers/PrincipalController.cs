@@ -13,6 +13,12 @@ namespace CSRF_post_demo.Controllers
         {
             return View();
         }
+        // GET: SaleReport
+        public ActionResult SaleReport()
+        {
+            ViewBag.SaleReport = TempData["SALE"].ToString();
+            return View();
+        }
         // GET: Buy
         public ActionResult Buy()
         {
@@ -22,7 +28,8 @@ namespace CSRF_post_demo.Controllers
         [HttpPost]
         public ActionResult Buy(string product, string address)
         {
-            return View();
-        }
+            TempData["SALE"] = "Product bought: " + product + "€. Sent to address: " + address + ".";
+            return RedirectToAction("SaleReport", "Principal");
+        }        
     }
 }
