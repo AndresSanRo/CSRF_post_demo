@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Hacker page</a>
+        @Html.ActionLink("Hacker", "Index", "Home", null, new { @class = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,8 +19,8 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">It will look like a normal page<span class="sr-only">(current)</span></a>
-                </li>                              
-            </ul>            
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container body-content">
